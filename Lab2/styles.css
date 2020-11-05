@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+.col-1 {
+  text-align: center;
+  margin-right: 20px;
+  flex: 1;
+  padding: 1em;
+}
+.col-2 {
+  flex: 6;
+}
+header > img {
+  border: solid thick black;
+  border-radius: 1em;
+  box-shadow: black 0.5em 0.5em 0.3em;
+  transform: rotate(20deg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vh;
+}
+.content {
+  display: flex;
+}
+header {
+  height: 35vh;
+  text-align: center;
+}
+footer {
+  background: #f5f5f5;
+  text-align: center;
+}
+h1 {
+  padding: 0.25em;
+}
+figure {
+  margin-bottom: 4.5em;
+}
+figure > img {
+  width: 15vh;
+}
+article {
+  flex: 4;
+  min-height: 100%;
+  margin-bottom: -5vh;
+}
+section {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+p {
+  margin: 10px;
+  width: 220px;
+  padding: 10px;
+}
+span {
+  color: red;
+  margin: 7px;
+  font-size: 25px;
+}
+.WrapR {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  float: right;
+  margin: 5px;
+}
+.WrapL {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  clear: right;
+  float: left;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column-reverse;
+  }
+  p,
+  .col-1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

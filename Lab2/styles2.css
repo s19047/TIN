@@ -1,0 +1,110 @@
+header {
+  grid-area: header;
+  text-align: center;
+}
+.col-2 {
+  grid-area: main;
+}
+.col-1 {
+  grid-area: gallary;
+  text-align: center;
+  margin-right: 20px;
+  /*flex: 1;*/
+  padding: 1em;
+}
+footer {
+  grid-area: footer;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#grid-container {
+  display: grid;
+  width: 100%;
+  grid-template:
+    [header-left] "header header" 1fr [header-right]
+    [main-left] "gallary  main" 3fr [main-right]
+    [footer-left] "gallary  footer" [footer-right]
+    / 1fr 6fr;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header > img {
+  border: solid thick black;
+  border-radius: 1em;
+  box-shadow: black 0.5em 0.5em 0.3em;
+  transform: rotate(20deg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vh;
+}
+
+h1 {
+  padding: 0.25em;
+}
+figure {
+  margin-bottom: 4.5em;
+}
+figure > img {
+  width: 15vh;
+}
+article {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  justify-content: space-around;
+}
+p {
+  margin: 10px;
+  width: 220px;
+  padding: 10px;
+}
+span {
+  color: red;
+  margin: 7px;
+  font-size: 25px;
+}
+.WrapR {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  float: right;
+  margin: 5px;
+}
+.WrapL {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  clear: right;
+  float: left;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  #grid-container {
+    display: grid;
+    width: 100%;
+    grid-template:
+      [header-left] "header header" 0.6fr [header-right]
+      [main-left] "main  main" 4fr [main-right]
+      [gallery-left] "gallary gallery" 1.5fr [gallery-right]
+      [footer-left] "footer footer" [footer-right]
+      / 1fr;
+  }
+  article {
+    display: inline-grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: space-around;
+  }
+  p,
+  .col-1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
