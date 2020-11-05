@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>s19047 - Task1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>s19047 - Ahmad Alaziz - Assignment B & D</h1>
+      <hr />
+      <br />
+    </header>
+
+    <h2>HTML Form</h2>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for="uname" class="required">Name</label>
+          </td>
+          <td>
+            <input type="text" id="uname" name="username" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass" class="required">Password</label>
+          </td>
+          <td>
+            <input type="password" id="pass" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Hobbies</label>
+          </td>
+          <td>
+            <label> <input type="checkbox" checked /> Cricket </label>
+            <label> <input type="checkbox" /> Football </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Gender</label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" value="f" name="gender" /> Female</label
+            >
+            <label> <input value="m" type="radio" name="gender" /> Male</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="city">City</label>
+          </td>
+          <td>
+            <select id="city" name="city">
+              <option disabled selected>--Choose City--</option>
+              <optgroup label="Polish">
+                <option>Warszaw</option>
+                <option>łodz</option>
+                <option>Wrocław</option>
+                <option>Kraków</option>
+              </optgroup>
+              <optgroup label="Others">
+                <option>Homs</option>
+                <option>Paris</option>
+                <option>Berlin</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Note:</label>
+          </td>
+          <td>
+            <textarea rows="4" cols="40"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" />
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <footer></footer>
+  </body>
+</html>

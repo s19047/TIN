@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+
+.column1 {
+  float: left;
+  width: 47%;
+  padding: 10px;
+  background-color: #aaa;
+}
+.column2 {
+  float: right;
+  width: 47%;
+  padding: 10px;
+  background-color: #aaa;
+}
+
+form {
+  font-family: "Tangerine", serif;
+  font-size: 21px;
+}
+.WrapR {
+  float: right;
+  margin: 5px;
+}
+.WrapL {
+  clear: right;
+  float: left;
+  margin: 5px;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+.required {
+  font-weight: bold;
+  color: rgb(39, 37, 32);
+}
+
+table {
+  margin-top: 1%;
+}
+h1 {
+  text-align: center;
+}
+body {
+  width: 75%;
+  margin: auto;
+}
+img {
+  width: 250px;
+  height: 250px;
+  display: block;
+}
