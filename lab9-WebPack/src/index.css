@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 500px;
+  max-width: 98%;
+  min-height: 34vh;
+  background-color: #ee8c68;
+  background-image: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
+  box-shadow: 8px 8px 7px rgba(139, 128, 128, 0.3);
+}
+input,
+label {
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+input {
+  margin-top: 4%;
+  height: 5vh;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+}
